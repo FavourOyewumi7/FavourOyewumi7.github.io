@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.container{
+    border-radius: 10px;
+    height: 75%;
+    width: 80%;
+    display: flex;
+    margin: auto;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    box-shadow: 0px 0px 12px 0px  rgb(0, 0, 0, 0.33);
+}
+.container:hover{
+    box-shadow: 0px 0px 7px 0px rgb(0, 0, 0, 0.33);
+}
+.img-div{
+    
+    height: 100%;
+    width: 40%;
+    background-image: url('6.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.form-container{
+    
+    height: 100%;
+    width: 60%;
+    position: relative;
+    
+}
+.proper{
+    padding-left: 5%;
+    width: 100%;
+    height: 100%;
+}
+.form{
+    height: 100%;
+    margin-top: 5%;
+    
+
+}
+@media screen and (max-width :576px){
+    .container{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    .img-div{
+        width: 100%;
+        height: 50%;
+    }
+    .form-container{
+        height: 100%;
+        width: 100%;
+    }
+}
+.form h2{
+    text-align:center;
+    font-weight: bold;
+    
+}
+.info-div{
+    display: grid;
+    grid-template-columns: repeat(2, 46%);
+    grid-template-rows: repeat(2, 45%);
+    grid-row-gap: 30%;
+    width: 100%;
+    
+}
+.class input{
+    height: 70%;
+    width: 90%;
+    background-color: rgb(0, 0, 0, 0.11);
+    border: none;
+}
+.class select{
+    height: 70%;
+    width: 90%;
+    background-color: rgb(0, 0, 0, 0.11);
+    border: none;
+}
+.email {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 40%;
+    margin-top: 20px;
+    
+}
+.sub-email{
+    margin-top:4% ;
+    width: 100%;
+
+}
+.sub-email select{
+    width: 87.5%;
+    height: 70%;
+    background-color: rgb(0, 0, 0, 0.11);
+    border: none;
+}
+.sub-email input{
+    width: 87.5%;
+    height: 70%;
+    background-color: rgb(0, 0, 0, 0.11);
+    border: none;
+}
+.sub-emails{
+    height: 75%;
+    margin-top: 25px;
+
+}
+.sub-emails input{
+    height: 70%;
+}
+label{
+    font-weight: lighter;
+}
+input::placeholder{
+    padding-left: 5px;
+    color: rgb(0, 0, 0, 0.33)
+    
+
+}
+input[type=date]{
+    color: rgb(0, 0, 0, 0.33);
+}
+button{
+    width: 30%;
+    height: 8%;
+    background-color: royalblue;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 12px 0px  rgb(0, 0, 0, 0.33);
+    color: white;
+}
+button:hover{
+    box-shadow: 0px 0px 7px 0px  rgb(0, 0, 0, 0.33);
+
+}
+@media screen and (max-width :576px){
+    
+    
+    .proper{
+        width: 100%;
+        height: 100%;
+        
+    }
+    .form{
+        width: 100%;
+        margin-top: 5px;
+        height: 80%;
+
+    }
+    .class{
+        padding-top: 5px;
+    }
+    .info-div{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .email{
+        margin-top: 0;
+        height: 35%;
+    }
+    .sub-email input{
+        height:50%;
+    }
+    .sub-email select{
+        height:50%;
+    }
+    button{
+        height: 6%;
+    }
+}
